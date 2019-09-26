@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    border-radius: 2px;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 2px;
+}
+
+header {
+    display: table;
+    width: 100%;
+    height: 10vh; 
+    position: relative;
+    background-color: azure;
+    border-bottom: 1px solid rgb(213, 216, 214);
+}
+
+.header-content {
+    width: 960px;
+    display: table-cell;
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.name {
+    display: table;
+    background-color: rgba(34, 192, 139, 0.801);
+    height: 100%;
+    position: absolute;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+h3 {
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+nav {
+    float: right;
+    display: table;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+a:not(:last-child) {
+    padding-right: 20px;
+}
+
+a:hover {
+    color: rgba(34, 192, 139, 0.801);
+    transition: ease-in 0.1s;
+}
+
+main {
+    height: 88vh;
+    position: relative;
+}
+
+.card {
+    position: absolute;
+    height: 85%;
+    width: 960px;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    border: 0.5px solid rgb(213, 216, 214);
+    overflow: auto;
+}
+
+.card-header {
+    height: 15%;
+    display: table;
+    width: 900px;
+    margin-left: 30px;
+    border-bottom: 1px solid rgb(213, 216, 214);
+}
+
+h4 {
+    color: rgba(34, 192, 139, 0.801);
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.card-content {
+    width: 900px;
+    display: table;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 20px;
+    line-height: 2rem;
+}
+
+img {
+    float: left;
+    margin-right: 15px;
+}
+
+.hangman, .rock-paper-scissors, .rpg, .rutgers, .trivia {
+    display: inline-block;
+    height: 200px;
+    width: 300px;
+    position: relative;
+    margin: 20px 10px;
+}
+
+/* I tried adding bg-size and bg-position to the bit of code above but it didn't work.
+ This bit is pretty repetitive and I imagine there must be a better way? */
+
+.hangman {
+    background: url(https://picsum.photos/id/1052/4000/2667);
+    background-size: cover;
+    background-position: center;
+}
+
+.rpg {
+    background: url(https://picsum.photos/id/1054/3079/1733);
+    background-size: cover;
+    background-position: center;
+}
+
+.trivia {
+    background: url(https://picsum.photos/id/1014/6016/4000);
+    background-size: cover;
+    background-position: center;
+}
+
+.rutgers {
+    background: url(https://picsum.photos/id/169/2500/1662);
+    background-size: cover;
+    background-position: center;
+}
+
+.rock-paper-scissors {
+    background: url(https://picsum.photos/id/1025/4951/3301);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: table;
+    background-color: rgba(34, 192, 139, 0.801);
+    width: 100%;
+    height: 40px;
+    top: 70%;
+    position: absolute;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+h5 {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 100%;
+    height: 2rem;
+    display: table-cell;
+    border: 1px solid  rgb(213, 216, 214);
+}
+
+textarea {
+    border: 1px solid  rgb(213, 216, 214);
+    height:150px; 
+    width: 100%;
+}
+
+button {
+    margin-top: 10px;
+    background-color: rgba(34, 192, 139, 0.801);
+    color: white;
+    padding: 10px 20px;
+    border: 0px;
+}
+
+button:hover {
+    background-color: rgba(4, 119, 81, 0.801);
+}
+
+footer {
+    background-color: rgba(34, 192, 139, 0.801);
+    height: 2vh;
+}
+
+@media screen and (max-width: 980px) {
+    .header-content {
+        width: 100%;
+    }
+    .card {
+        width: 100%;
+    }
+    .card-content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-content {
+        width: 100%;
+    }
+    .card {
+        width: 50%;
+    }
+    .card-content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .header-content {
+        width: 100%;
+    }
+    .card {
+        width: 50%;
+    }
+    .card-content {
+        width: 100%;
+    }
+}
