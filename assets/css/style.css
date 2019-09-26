@@ -223,13 +223,30 @@ footer {
 
 @media screen and (max-width: 640px) {
 
-    .header-content {
+    .name, nav {
+        position: static;
         width: 100%;
+        height: 100%;
+    }
+
+    h3, a {
+        display: table-cell;
+        text-align: center; 
+        margin: auto;
+
     }
     .card {
-        width: 50%;
+        width: 90%;
     }
     .card-content {
-        width: 100%;
+        width: 90%;
     }
+/*
+My image works pretty well not being in the center of the page like 
+it is in the example picture, but I did want my text underneath the image
+I have up now I could have done it with 
+img {
+        float: none;
+    }
+     */
 }
