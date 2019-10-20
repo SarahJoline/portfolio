@@ -202,14 +202,15 @@ footer {
         width: 100%;
     }
     .card {
-        width: 100%;
+        width: 50%;
     }
     .card-content {
         width: 100%;
     }
 }
-
+    
 @media screen and (max-width: 768px) {
+
     .header-content {
         width: 100%;
     }
@@ -240,7 +241,10 @@ footer {
     }
     .card-content {
         width: 90%;
+        /*why is my contact page scrolling to the side?*/
     }
+
+    
 /*
 My image works pretty well not being in the center of the page like 
 it is in the example picture, but I did want my text underneath the image
@@ -248,5 +252,7 @@ I have up now I could have done it with
 img {
         float: none;
     }
+
+    Am I struggling with the footer? I can never see it.
      */
 }
