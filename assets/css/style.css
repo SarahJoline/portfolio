@@ -119,7 +119,7 @@ img {
 }
 
 .train-scheduler,
-.rock-paper-scissors,
+.giphy,
 .event-toast,
 .friend-finder,
 .trivia {
@@ -129,34 +129,6 @@ img {
   position: relative;
   margin: 20px;
   margin-bottom: 0px;
-}
-
-.train-scheduler {
-  background: url(https://picsum.photos/id/1052/4000/2667);
-  background-size: cover;
-  background-position: center;
-}
-
-.event-toast {
-  background: url(https://picsum.photos/id/1054/3079/1733);
-  background-size: cover;
-  background-position: center;
-}
-
-.trivia {
-  background: url(https://picsum.photos/id/1014/6016/4000);
-  background-size: cover;
-  background-position: center;
-}
-
-.friend-finder {
-  background: url(https://picsum.photos/id/169/2500/1662);
-  background-size: cover;
-  background-position: center;
-}
-
-.rock-paper-scissors {
-  background: url(https://picsum.photos/id/1025/4951/3301);
   background-size: cover;
   background-position: center;
 }
