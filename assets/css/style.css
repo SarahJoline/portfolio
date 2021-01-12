@@ -118,11 +118,10 @@ img {
   display: inline-block;
 }
 
-.train-scheduler,
-.giphy,
-.event-toast,
+.haiku-4-u,
+.bookswap,
 .friend-finder,
-.trivia {
+.scraper {
   display: inline-block;
   height: 200px;
   width: 300px;
