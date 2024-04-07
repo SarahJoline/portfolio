@@ -12,7 +12,7 @@ nav {
 .project-btn,
 .about-btn {
   text-decoration: none;
-  color: 33ee3e;
+  color: #33ee3e;
   display: table-cell;
   vertical-align: middle;
   font-size: 16px;
@@ -23,7 +23,8 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 280px;
+  padding: 100px 40px 0;
+  height: 100vh;
 }
 
 .my-pic,
@@ -71,6 +72,25 @@ h3 {
   justify-content: space-around;
   margin: 20px;
 }
+/* .external-links {
+  align-self: center;
+} */
+.project-list {
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+   /* font-size: 20px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px; */
+
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+}
+
 
 .react {
   color: #bd3497;
@@ -99,12 +119,17 @@ h3 {
 
 .haiku-4-u,
 .bookswap {
-  width: 692px;
-  height: 442px;
+  max-width: 692px;
+  width: 90vw;
+  height: 40vh;
   border-radius: 3px;
+  max-height: 442px;
   margin: 30px;
   box-shadow: 4px 4px 4px rgba(157, 157, 157, 0.413);
+
+
 }
+
 
 a {
   text-decoration: none;
@@ -166,3 +191,19 @@ a:hover {
     width: 90%;
   } */
 }
+
+@media only screen and (min-width: 600px) {
+  .image-container {
+    flex-direction: row;
+    padding: 0 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .haiku-4-u,
+  .bookswap {
+  height: 300px;
+  width: 400px;
+  }
+}
+
